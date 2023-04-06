@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFF6FF;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    color: #2A4A5C;
+    padding: 50px 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+}
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 1fr;
+}
+.container-left {
+    background: url("../img/bg.jpg") no-repeat top / cover;
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    width: 90px;
+    height: 70px;
+}
+
+.container-right {
+    background-color: #EEEEEE;
+    padding: 70px 40px;
+}
+.header {
+    margin-bottom: 55px;
+}
+.header__title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 24px;
+}
+.header__subtitle {
+    color: #AFAFAF;
+}
+.social-networks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.social-networks__facebook {
+    background-color: #255A9B;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    color: #FFFFFF;
+    font-size: 13px;
+    width: 47%;
+    transition: 0.4s;
+}
+.social-networks__facebook img,
+.social-networks__linkedin img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.social-networks__linkedin {
+    background-color: #0076B6;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    color: #FFFFFF;
+    font-size: 13px;
+    width: 47%;
+    transition: 0.4s;
+}
+.social-networks__facebook:hover,
+.social-networks__linkedin:hover {
+    transform: scale(1.05);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #2A4A5C;
+}
+.container-span {
+    margin: 45px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cantainer-span__item{
+    font-size: 13px;
+    margin: 0 10px;
+}
+.cantainer-span__line{
+    width: 20%;
+    background-color: #7B8A92;
+    height: 1px;
+}
+
+.form__contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form__label-email,
+.form__label-tel {
+    width: 100%;
+    outline: none;
+    border: 1px solid #96A5B1;
+    padding: 25px 10px 5px 10px;
+}
+
+.form__label{
+    position: relative;
+    width: 47%;
+}
+
+.form__label-placeholder{
+    font-size: 14px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: #96A5B1;
+}
+
+.form__label-email:focus, 
+.form__label-tel:focus{   
+    border-left: 2px solid #3698FB;
+}
+
+.form__title {
+    margin: 50px 0 10px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.form__subtitle {
+    font-size: 12px;
+    color: #AFAFAF;
+}
+
+.form__type {
+    margin: 40px 0 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.info{
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+
+.form__radio {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form__label-type{
+    position: relative; 
+    padding-left: 15px;
+}
+
+.form__radio-span{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #AFAFAF;
+}
+
+.form__radio:checked + .form__radio-span{
+    border: 3px solid #3698FB;
+}
+
+.form__description {
+    width: 47%;
+    font-size: 12px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 8px #96A5B1;
+    color: #AFAFAF;
+}
+
+.form__agreement {
+    margin: 40px 0 50px;
+    font-size: 12px;
+    display: flex;
+}
+.form__agreement-label {
+    display: flex;
+    align-items: center;
+}
+.form__agreement-checkbox {
+    margin-right: 5px;
+}
+.form__link {
+    margin-left: 5px;
+    color:#3698FB;
+    text-decoration: underline;
+}
+.form__submit {
+    background-color: #3698FB;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 15px 0;
+    width: 45%;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.form__submit:hover{
+    transform: scale(1.1);
+    background-color: tomato;
+}

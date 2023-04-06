@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iintoo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:
+    ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,
+    900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/media.css">
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <div class="container-left">
+        <img src="img/logo.svg" alt="logo" class="logo">
+      </div>
+      <div class="container-right">
+        <header class="header">
+          <h1 class="header__title">Get iintoo it today</h1>
+          <p class="header__subtitle">There is no charge or obligation upon registration.</p>
+        </header>
+        <section class="social-networks">
+          <a 
+            href="https://www.facebook.com" 
+            target="_blank" 
+            class="social-networks__facebook">
+            <img src="img/facebook.svg" alt="facebook">
+            Register with Facebook
+          </a>
+          <a 
+            href="https://www.linkedin.com" 
+            target="_blank" 
+            class="social-networks__linkedin">
+            <img src="img/linkedin.svg" alt="linkedin">
+            Register with LinkedIn
+          </a>
+        </section>
+        <div class="container-span">
+          <span class="cantainer-span__line"></span>
+          <span class="cantainer-span__item">OR</span>
+          <span class="cantainer-span__line"></span>
+        </div>
+        <form action="#" class="form">
+          <div class="form__contacts">
+            <label class="form__label">
+              <input 
+                type="email" 
+                class="form__label-email" 
+                name="email" 
+                required 
+                value="gus.goodwin@gmail.com">
+              <span class="form__label-placeholder">Email</span>
+            </label>
+            <label class="form__label">
+              <input 
+                type="tel" 
+                class="form__label-tel" 
+                name="phone" 
+                required>
+              <span class="form__label-placeholder">Phone</span>
+            </label>
+          </div>
+          <h2 class="form__title">What type of investor are you?</h2>
+          <p class="form__subtitle">Select the type of investor you are below.</p>
+          <div class="form__type">
+            <div class="form__type-wrap">
+              <label class="form__label-type">
+                <input 
+                  type="radio" form__label-type
+                  class="form__radio" 
+                  name="investor-type" 
+                  checked>
+                Individual
+                <span class="form__radio-span"></span>
+              </label>
+              <img src="img/info.svg" alt="info" class="info">
+            </div>
+            <div class="form__type-wrap">
+              <label class="form__label-type">
+                <input 
+                  type="radio" 
+                  class="form__radio" 
+                  name="investor-type">
+                Business
+                <span class="form__radio-span"></span>
+              </label>
+              <img src="img/info.svg" alt="info" class="info">
+            </div>
+            <div class="form__type-wrap">
+              <label class="form__label-type">
+                <input 
+                  type="radio" 
+                  class="form__radio" 
+                  name="investor-type">
+                IRA
+                <span class="form__radio-span"></span>
+              </label>
+              <img src="img/info.svg" alt="info" class="info">
+            </div>
+            <div class="form__type-wrap">
+              <label class="form__label-type">
+                <input 
+                  type="radio" 
+                  class="form__radio" 
+                  name="investor-type">
+                Trust
+                <span class="form__radio-span"></span>
+              </label> 
+              <img src="img/info.svg" alt="info" class="info">
+            </div>
+          </div>
+          <div class="form__description">
+            <p class="form__description-text">I am a natural person investing on my own 
+              behalf as a sole owner, joint tenant, or tenant in common.
+            </p>
+          </div>
+          <div class="form__agreement">
+            <label class="form__agreement-label">
+              <input type="checkbox" class="form__agreement-checkbox">
+              I agree to the terms and receiving notifications from iintoo
+            </label>
+            <a href="#" class="form__link">View full terms</a>
+          </div>
+          <div class="form__button-wrapper">
+            <button type="submit" class="form__submit">Create Account</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
